@@ -10,14 +10,18 @@ namespace methods
     {
         static void Main(string[] args)
         {
+
+            EvenNumber(10);
+
             Program p = new Program();
-            p.EvenNumber(20);
+            int result = p.Add(20,30);
+            Console.WriteLine("Result is = {0}",result);
+            Console.ReadLine();
 
 
-            
         }
 
-        public  void EvenNumber(int x)
+        public static void EvenNumber(int x)
         {
             int Num = 0;
             while (Num <= x)
@@ -27,5 +31,12 @@ namespace methods
             }
             Console.ReadLine();
         }
+
+        public int Add(int a, int b)
+        {
+            return a + b;
+
+        }
+        
     }
 }
